@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DSAAlgoIntellijProjects.iml" filepath="$PROJECT_DIR$/DSAAlgoIntellijProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetcodeProblems/LeetcodeProblems.iml" filepath="$PROJECT_DIR$/LeetcodeProblems/LeetcodeProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCodeProblems/LinkedListProblems/LinkedListProblems.iml" filepath="$PROJECT_DIR$/LeetCodeProblems/LinkedListProblems/LinkedListProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCodeProblems/StringProblems/StringProblems.iml" filepath="$PROJECT_DIR$/LeetCodeProblems/StringProblems/StringProblems.iml" />
+    </modules>
+  </component>
+</project>
