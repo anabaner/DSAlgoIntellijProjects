@@ -3,9 +3,8 @@
 //Output: [0,1]
 //Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class TwoSumProblem {
 
@@ -14,7 +13,9 @@ public class TwoSumProblem {
         int[] nums = {2,7,11,15};
         int target =18;
         int[] result = getIndicesofTargetSum(nums,target);
+        List<Integer> list = Arrays.stream(result).boxed().collect(Collectors.toList());
         System.out.println(Arrays.toString(result));
+        System.out.println(list);
 
     }
 

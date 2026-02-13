@@ -54,3 +54,74 @@ If the sum is less than 0, increment j. If the sum is greater than 0, decrement 
 After the while loop, iterate through the set and add each triplet to the output vector.
 Return the output vector
  */
+
+//Another way -
+
+/*
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class Solution {
+    */
+/**
+     * Finds all unique triplets in the array that sum to zero.
+     * @param nums The input integer array.
+     * @return A list of unique triplets.
+     *//*
+
+    public List<List<Integer>> threeSum(int[] nums) {
+        // Sort the array to efficiently handle duplicates and use the two-pointer approach
+        Arrays.sort(nums);
+        List<List<Integer>> result = new ArrayList<>();
+        int n = nums.length;
+
+        // Iterate through the array with the first pointer 'i'
+        for (int i = 0; i < n - 2; i++) {
+            // Skip duplicate values for 'i' to avoid duplicate triplets
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+
+            // Break if the current number is positive (since the array is sorted,
+            // no three numbers will sum to zero if the first is already positive)
+            if (nums[i] > 0) {
+                break;
+            }
+
+            // Initialize the two pointers for the remaining elements
+            int left = i + 1;
+            int right = n - 1;
+
+            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+
+                if (sum == 0) {
+                    // Found a triplet that sums to zero
+                    result.add(Arrays.asList(nums[i], nums[left], nums[right]));
+
+                    // Skip duplicates for 'left' and 'right' pointers
+                    while (left < right && nums[left] == nums[left + 1]) {
+                        left++;
+                    }
+                    while (left < right && nums[right] == nums[right - 1]) {
+                        right--;
+                    }
+
+                    // Move both pointers inward to continue the search
+                    left++;
+                    right--;
+                } else if (sum < 0) {
+                    // Sum is too small, increment the left pointer to increase the sum
+                    left++;
+                } else {
+                    // Sum is too large, decrement the right pointer to decrease the sum
+                    right--;
+                }
+            }
+        }
+
+        return result;
+    }
+}
+*/

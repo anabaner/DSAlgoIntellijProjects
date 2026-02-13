@@ -4,7 +4,7 @@ import java.util.Map;
 public class SubArraySumEqualsK {
 
     public static void main(String args[]){
-        int arr[] = {10, 2, -2, -20, 10};
+        int arr[] = {10, 2, -2, -20, 10}; //3
         int k = -10;
         int result = countSubarraySumK(arr,k);
         System.out.println(result);
